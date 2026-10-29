@@ -424,6 +424,13 @@ nama_sumber = ""
 path_terpilih = None
 
 if sumber == "Hasil lokal":
+    # Fallback pencarian otomatis file default jika belum tersetting
+    if not list(RESULTS.glob("*.csv")):
+        default_root_csv = ROOT / "hasil_pengujian.csv"
+        if default_root_csv.is_file() and not (RESULTS / "hasil_pengujian.csv").is_file():
+            import shutil
+            shutil.copy(default_root_csv, RESULTS / "hasil_pengujian.csv")
+
     daftar = sorted(
         RESULTS.glob("*.csv"),
         key=lambda p: p.stat().st_mtime,
@@ -455,14 +462,14 @@ if sumber == "Hasil lokal":
         )
 
 else:
-    unggahan = st.sidebar.file_uploader(
+    unggahannya = st.sidebar.file_uploader(
         "Unggah CSV asli keluaran program C",
         type=["csv"],
     )
 
-    if unggahan is not None:
-        payload = unggahan.getvalue()
-        nama_sumber = unggahan.name
+    if unggahannya is not None:
+        payload = unggahannya.getvalue()
+        nama_sumber = unggahannya.name
 
 
 # ============================================================
