@@ -1,0 +1,31 @@
+EKSPERIMEN MIN, MAX, DAN RATA-RATA
+Compiler          : 16.2.0
+OpenMP            : 202111
+Prosesor logis    : 16
+Timer pengukuran  : QueryPerformanceCounter
+Frekuensi QPC     : 10000000 Hz
+Periode tick QPC  : 0.000000100000 detik
+Tick timer OpenMP : 0.001000000000 detik (diagnostik saja)
+Target            : 150 pengukuran tercatat
+Output            : C:\Users\Wildan\komputasi-paralel\results\hasil_web_20261018_152027_673995.csv
+
+D1: menyiapkan 1000 elemen...
+D1 selesai: 25 pengukuran valid | Total 25/150
+
+D2: menyiapkan 10000 elemen...
+D2 selesai: 25 pengukuran valid | Total 50/150
+
+D3: menyiapkan 100000 elemen...
+D3 selesai: 25 pengukuran valid | Total 75/150
+
+D4: menyiapkan 1000000 elemen...
+D4 selesai: 25 pengukuran valid | Total 100/150
+
+D5: menyiapkan 10000000 elemen...
+D5 selesai: 25 pengukuran valid | Total 125/150
+
+D6: menyiapkan 100000000 elemen...
+D6 selesai: 25 pengukuran valid | Total 150/150
+
+SELESAI: 150 baris pengukuran tersimpan.
+

@@ -1,0 +1,8 @@
+{
+  "waktu_mulai_lokal": "20261018_152058_679770",
+  "charger": "Terpasang",
+  "mode_daya": "Balanced",
+  "program": "C:\\Users\\Wildan\\komputasi-paralel\\bin\\benchmark.exe",
+  "jumlah_pengukuran": 150,
+  "stdout": "EKSPERIMEN MIN, MAX, DAN RATA-RATA\nCompiler          : 16.2.0\nOpenMP            : 202111\nProsesor logis    : 16\nTimer pengukuran  : QueryPerformanceCounter\nFrekuensi QPC     : 10000000 Hz\nPeriode tick QPC  : 0.000000100000 detik\nTick timer OpenMP : 0.001000000000 detik (diagnostik saja)\nTarget            : 150 pengukuran tercatat\nOutput            : C:\\Users\\Wildan\\komputasi-paralel\\results\\hasil_web_20261018_152058_679770.csv\n\nD1: menyiapkan 1000 elemen...\nD1 selesai: 25 pengukuran valid | Total 25/150\n\nD2: menyiapkan 10000 elemen...\nD2 selesai: 25 pengukuran valid | Total 50/150\n\nD3: menyiapkan 100000 elemen...\nD3 selesai: 25 pengukuran valid | Total 75/150\n\nD4: menyiapkan 1000000 elemen...\nD4 selesai: 25 pengukuran valid | Total 100/150\n\nD5: menyiapkan 10000000 elemen...\nD5 selesai: 25 pengukuran valid | Total 125/150\n\nD6: menyiapkan 100000000 elemen...\nD6 selesai: 25 pengukuran valid | Total 150/150\n\nSELESAI: 150 baris pengukuran tersimpan.\n"
+}
